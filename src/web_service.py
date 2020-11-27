@@ -1,18 +1,7 @@
 from flask import Flask, jsonify
 from functions import read_csv
 
-app = Flask("patito")
-
-def ejemplo(x="a",y="b",z="c"):
-    print(x)
-
-@app.route('/json', methods=['GET'])
-def ejemplo_json():
-    contenido = {"id": 1, "nombre": "Juan", "apellido": "algun apellido"}
-    segundo = {"id": 2, "nombre": "Javier", "apellido": "Zepeda"}
-    lista = [contenido, segundo]
-    return jsonify(lista)
-
+app = Flask("evaluacion_g5")
 
 @app.route('/', methods=['GET'])
 def home():

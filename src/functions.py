@@ -8,6 +8,3 @@ def read_csv():
     for line in reader:
       data_list.append(line)
   return data_list
-
-def hello():
-  return 'hello world'
